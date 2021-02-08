@@ -1,0 +1,62 @@
+body{
+    background-color: #13141b;
+    color: #ffffff;
+    background-image: url(images/bg-image.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+}
+
+.form-control{
+    /* background-color:rgba(255, 255, 255, 0.2); */
+    background-color:rgb(0, 255, 191);
+    padding: 22px;
+    border: none;
+    border-radius: 25px;
+}
+.btn{
+    border-radius: 1.5rem;
+    padding: 9px 20px;
+}
+
+.btn-privious{
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+.navbar-toggler {
+    border: none;
+}
+.search-box{
+    position: relative;
+}
+.search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+.single-result{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+}
+
+.song-div-style {
+    background-color: #85FFBD;
+    color: black;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+}
+.song-div-style img {
+    border-radius: 10px;
+}
+.song-lyrics-style {
+    background-color: #FEE140;
+    background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+    size: cover;
+    width: 50%;
+    margin: auto;
+    border-radius: 40px;
+    padding: 30px;
+    text-shadow: 2px 2px 8px rgb(225, 0, 255) ;
+    text-align: center;
+}
