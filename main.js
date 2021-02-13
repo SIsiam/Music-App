@@ -17,7 +17,11 @@ const searchSongs = () => {
     const userSearch = document.getElementById('search-box').value;
     const myUrl = `https://api.lyrics.ovh/suggest/${userSearch}`
 
+    // spinners function call 
+
+    toggoleSpinners(true)
     // My Song Loading Data
+
 
     fetch(myUrl)
         .then(respo => respo.json())
@@ -49,6 +53,7 @@ const displaySongs = songs => {
             </div>
             `;
         songContainer.appendChild(everySongDiv);
+        toggoleSpinners(false)
     })
 }
 
@@ -74,7 +79,6 @@ const getLyric = async (artist, title) => {
    .then(data => displayLyrics(data.lyrics))
  }
 */
-
 const displayLyrics = lyrics => {
     const lyricsDiv = document.getElementById('song-lyrics');
     lyricsDiv.className ="song-lyrics-style"
@@ -85,4 +89,16 @@ const displayLyrics = lyrics => {
 const displayError = error => {
     const errorMsg = document.getElementById('err-Msg');
     errorMsg.innerText = error;
+}
+
+const toggoleSpinners = (show) => {
+    let spinners = document.getElementById("my-spinners");
+    if (show) {
+        
+        spinners.classList.remove("d-none");
+    }
+    else {
+
+        spinners.classList.add("d-none");
+    }
 }
